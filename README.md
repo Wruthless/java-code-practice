@@ -1,5 +1,6 @@
 # Java Code Practice
-Just a playground for fundamental computing tasks written in Java.
+Just a playground for fundamental computing tasks written in Java. All source code is under the `src
+ ` directory.
 
 ### StringPermutation.java
 - Detects if a string is a permutation of another.
