@@ -6,3 +6,6 @@ Just a playground for fundamental computing tasks written in Java. All source co
 
 ### UniqueCharacters.java
 - Verifies if a string contains all unique characters.
+
+### RepeatingCharacters.java
+- Return the number of repeated characters in a string.
