@@ -2,9 +2,8 @@
 
 Just a playground for fundamental computing tasks written in Java. All source code is under the `src` directory.
 
----
 ### StringPermutation.java
-**Detects if a string is a permutation of another.**
+**Detect if a string is a permutation of another.**
 
 An empty array of integers is created along with three `for` loops. The first loop cast the chars in the array to ints 
 to obtain the ordinal values of the characters. The ordinal value is used to increment
@@ -35,10 +34,12 @@ due to a match in the opposing string so return `false`.
         if(arr[i] != 0) return false;
     }
 ```
----
 
 ### UniqueCharacters.java
-- Verifies if a string contains all unique characters.
+- Verify if a string contains all unique characters.
 
 ### RepeatingCharacters.java
 - Return the number of repeated characters in a string.
+
+### URLEncoding.java
+- Encode spaces in a URL with "%20" instead of "+".
