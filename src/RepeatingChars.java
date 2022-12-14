@@ -6,6 +6,9 @@ public class RepeatingChars {
         String testString = "aaaabbbdddeeffffggggghhhhhiiiij";
         findRepeats(testString);
 
+        System.out.println("\n");
+
+        testForRepeatingChars(testString);
 
     }
 
@@ -13,9 +16,9 @@ public class RepeatingChars {
         int match = 0;
         for (int i = 0; i < string.length(); i++) {
             for (int j = 0; j < string.length(); j++) {
-               if(string.charAt(i) == string.charAt(j)) {
-                  match++;
-               }
+                if (string.charAt(i) == string.charAt(j)) {
+                    match++;
+                }
             }
             System.out.println(string.charAt(i) + " -- " + match);
             String dupe = String.valueOf(string.charAt(i)).trim();
@@ -23,4 +26,22 @@ public class RepeatingChars {
             match = 0;
         }
     }
+
+
+    public static void testForRepeatingChars(String string) {
+        int match = 0;
+
+        for (int i = 0; i < string.length(); i++) {
+            for (int j = 0; j < string.length(); j++) {
+                if (string.charAt(i) == string.charAt(j)) {
+                    match++;
+                }
+            }
+            System.out.println(string.charAt(i) + " --- " + match);
+            String dupes = String.valueOf(string.charAt(i)).trim();
+            string = string.replaceAll(dupes, "");
+            match = 0;
+        }
+    }
 }
+
