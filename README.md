@@ -35,6 +35,8 @@ due to a match in the opposing string so return `false`.
     }
 ```
 
+___
+
 ### UniqueCharacters.java
 - Verify if a string contains all unique characters.
 
