@@ -34,8 +34,7 @@ due to a match in the opposing string so return `false`.
         if(arr[i] != 0) return false;
     }
 ```
-
-___
+<br>
 
 ### UniqueCharacters.java
 - Verify if a string contains all unique characters.
