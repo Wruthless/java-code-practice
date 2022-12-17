@@ -44,3 +44,6 @@ due to a match in the opposing string so return `false`.
 
 ### URLEncoding.java
 - Encode spaces in a URL with "%20" instead of "+".
+
+### StrBuilder.java
+- Uses the StringBuilder class for string manipulation to avoid copies.
