@@ -37,7 +37,25 @@ due to a match in the opposing string so return `false`.
 <br>
 
 ### UniqueCharacters.java
-- Verify if a string contains all unique characters.
+**Verify if a string contains all unique characters**
+
+A `String` is passed which is processed by two loops. The first loop grabs the initial
+character in the string. The second loop takes the next character in the string (`i+1`)
+and the body compares the two -- returning false if the two characters match. This process
+repeats until all characters have been compared, if no characters match return `true`.
+
+```java
+    public static boolean testForUniqueCharacters(String string) {
+        for (int i = 0; i < string.length(); i++) {
+            for (int j = i+1; j < string.length(); j++) {
+                if(string.charAt(i) == string.charAt(j)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+```
 
 ### RepeatingCharacters.java
 - Return the number of repeated characters in a string.
@@ -47,3 +65,6 @@ due to a match in the opposing string so return `false`.
 
 ### StrBuilder.java
 - Uses the StringBuilder class for string manipulation to avoid copies.
+
+### RotateMatrix.java
+- In place, clockwise rotation of a 3x3 matrix.

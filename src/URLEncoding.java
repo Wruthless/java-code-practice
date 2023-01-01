@@ -18,8 +18,8 @@ class URLEncoding {
         return input.stripTrailing().replace(" ", "%20");
     }
 
-    public static String encUrl(String input) {
-        return input.stripTrailing().replace(" ", "%20");
-    }
 
+    public static String encUrl(String input) {
+       return input.stripTrailing().replace(" ", "%20");
+    }
 }

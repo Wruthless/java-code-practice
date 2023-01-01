@@ -13,7 +13,15 @@ public class StrBuilder {
         stringBuilder.append("Dolor ");
         stringBuilder.append("Nurit");
 
-        System.out.println(stringBuilder.toString());
+        System.out.println(stringBuilder.toString() + "\n");
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("One ");
+        sb.append("Two ");
+        sb.append("Three.");
+        System.out.println(sb.toString());
+
     }
+
 
 }

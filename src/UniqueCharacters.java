@@ -17,13 +17,11 @@ public class UniqueCharacters {
             System.out.println("[x] Duplicates characters detected ...");
         }
 
-        if (testForUniqueCharacters(str_b)) {
-            System.out.println("No dupes");
+        if (testForUniqueCharacters(str_a)) {
+            System.out.println("No Dupes");
         } else {
             System.out.println("Dupes");
         }
-
-
     }
 
     public boolean uniqueCharacters(String str) {
@@ -37,16 +35,16 @@ public class UniqueCharacters {
         return true;
     }
 
+
     public static boolean testForUniqueCharacters(String string) {
         for (int i = 0; i < string.length(); i++) {
-            for (int j = i + 1; j < string.length(); j++) {
-                if (string.charAt(i) == string.charAt(j)) {
+            for (int j = i+1; j < string.length(); j++) {
+                if(string.charAt(i) == string.charAt(j)) {
                     return false;
                 }
             }
         }
         return true;
     }
-
 
 }
