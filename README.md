@@ -56,6 +56,7 @@ repeats until all characters have been compared, if no characters match return `
         return true;
     }
 ```
+<br>
 
 ### RepeatingCharacters.java
 - Return the number of repeated characters in a string.
