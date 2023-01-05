@@ -35,7 +35,6 @@ public class UniqueCharacters {
         return true;
     }
 
-
     public static boolean testForUniqueCharacters(String string) {
         for (int i = 0; i < string.length(); i++) {
             for (int j = i+1; j < string.length(); j++) {
@@ -46,5 +45,4 @@ public class UniqueCharacters {
         }
         return true;
     }
-
 }

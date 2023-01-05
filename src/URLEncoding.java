@@ -20,6 +20,6 @@ class URLEncoding {
 
 
     public static String encUrl(String input) {
-       return input.stripTrailing().replace(" ", "%20");
+        return input.stripTrailing().replace(" ","%20");
     }
 }

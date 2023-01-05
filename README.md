@@ -69,3 +69,6 @@ repeats until all characters have been compared, if no characters match return `
 
 ### RotateMatrix.java
 - In place, clockwise rotation of a 3x3 matrix.
+
+### BinarySearch.java
+- Binary search algorithm.

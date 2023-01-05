@@ -24,16 +24,15 @@ public class RotateMatrix {
         };
 
         rotMatrix(mtrx);
-        for (int[] ints:matrix) {
-            for (int i = 0; i < matrix.length; i++) {
+        for (int[] ints: mtrx) {
+            for (int i = 0; i < mtrx.length; i++) {
                 System.out.print(ints[i] + " ");
             }
-           System.out.println();
+            System.out.println();
         }
 
+
     }
-
-
 
 
     public static void rotateMatrix(int[][] matrix) {
@@ -61,18 +60,18 @@ public class RotateMatrix {
         int row = matrix.length;
 
         for (int i = 0; i < row; i++) {
-            for (int j = i; j < row ;j++) {
-               int temp = matrix[i][j];
-               matrix[i][j] = matrix[j][i];
-               matrix[j][i] = temp;
+            for (int j = i; j < row; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
             }
         }
 
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < row/2; j++) {
                 int temp = matrix[i][j];
-                matrix[i][j] = matrix[i][row - j - 1];
-                matrix[i][row - j - 1] = temp;
+                matrix[i][j] = matrix[i][row - 1 - j];
+                matrix[i][row - 1 - j] = temp;
             }
         }
     }
