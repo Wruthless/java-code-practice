@@ -72,3 +72,6 @@ repeats until all characters have been compared, if no characters match return `
 
 ### BinarySearch.java
 - Binary search algorithm.
+
+### SetZeroes.java
+- If a 0 exists in matrix make all related columns and rows 0.

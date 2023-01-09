@@ -29,18 +29,18 @@ public class RepeatingChars {
         }
     }
 
-    public static void testForRepeatingChars(String string){
+    public static void testForRepeatingChars(String string) {
         int match = 0;
 
         for (int i = 0; i < string.length(); i++) {
             for (int j = 0; j < string.length(); j++) {
-                if (string.charAt(i) == string.charAt(j)){
+                if (string.charAt(i) == string.charAt(j)) {
                     match++;
                 }
             }
             System.out.println(string.charAt(i) + " --- " + match);
             String dupes = String.valueOf(string.charAt(i)).trim();
-            string = string.replaceAll(dupes,"");
+            string = string.replaceAll(dupes, "");
             match = 0;
         }
     }

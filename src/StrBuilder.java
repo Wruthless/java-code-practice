@@ -21,8 +21,6 @@ public class StrBuilder {
         sb.append("Three ");
         sb.append("Four.");
         System.out.println(sb.toString());
-
-
     }
 
 

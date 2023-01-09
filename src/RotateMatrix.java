@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class RotateMatrix {
 
     public static void main(String[] args) {
@@ -24,13 +26,12 @@ public class RotateMatrix {
         };
 
         rotMatrix(mtrx);
-        for (int[] ints: mtrx) {
+        for (int[] ints:mtrx) {
             for (int i = 0; i < mtrx.length; i++) {
                 System.out.print(ints[i] + " ");
             }
             System.out.println();
         }
-
 
     }
 
@@ -60,7 +61,7 @@ public class RotateMatrix {
         int row = matrix.length;
 
         for (int i = 0; i < row; i++) {
-            for (int j = i; j < row; j++) {
+            for (int j = i+1; j < row; j++) {
                 int temp = matrix[i][j];
                 matrix[i][j] = matrix[j][i];
                 matrix[j][i] = temp;

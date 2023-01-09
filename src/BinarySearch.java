@@ -43,11 +43,10 @@ public class BinarySearch {
 
         while(low <= high) {
             int mid = (low + high) / 2;
-
             if (arr[mid] < x) {
                 low = mid + 1;
             } else if (arr[mid] > x) {
-               high = mid - 1;
+                high = mid - 1;
             } else {
                 return mid;
             }
