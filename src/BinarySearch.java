@@ -12,7 +12,7 @@ public class BinarySearch {
             9869, 12812, 21614, 31583, 13198, 24205, 6446, 29284, 2947};
 
 
-        System.out.println(binSearch(arr,848));
+        System.out.println(binSearch(arr, 848));
         System.out.println(binarySearch(arr, 848));
 
     }
@@ -41,8 +41,9 @@ public class BinarySearch {
         int high = (arr.length) - 1;
         Arrays.sort(arr);
 
-        while(low <= high) {
+        while (low <= high) {
             int mid = (low + high) / 2;
+
             if (arr[mid] < x) {
                 low = mid + 1;
             } else if (arr[mid] > x) {

@@ -17,7 +17,7 @@ public class StrBuilder {
 
         StringBuilder sb = new StringBuilder();
         sb.append("One ");
-        sb.append("Two ");
+        sb.append("Tow ");
         sb.append("Three ");
         sb.append("Four.");
         System.out.println(sb.toString());
